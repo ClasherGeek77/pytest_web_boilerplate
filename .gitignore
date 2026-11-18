@@ -1,0 +1,6 @@
+.venv/
+tools/chromedriver
+__pycache__/
+.pytest_cache/
+reports/
+.DS_Store

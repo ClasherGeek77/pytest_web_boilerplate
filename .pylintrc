@@ -1,0 +1,16 @@
+[MESSAGES CONTROL]
+# fixtures are injected by name (redefined-outer-name), no docstrings in this project
+# logging-fstring-interpolation off on purpose, log messages read better with the values inline
+# import-outside-toplevel off on purpose: the page objects form a real
+# import cycle (login->inventory->base->login), so the return-a-page
+# imports live inside the methods, which is also what a click does anyway
+disable=missing-module-docstring,missing-function-docstring,missing-class-docstring,redefined-outer-name,too-few-public-methods,logging-fstring-interpolation,import-outside-toplevel
+
+[DESIGN]
+# testdata holds one attribute per constant the tests use
+max-attributes=30
+# a parametrized test receives the table columns next to the fixtures
+max-args=6
+
+[FORMAT]
+max-line-length=88

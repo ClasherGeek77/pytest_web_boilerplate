@@ -1,0 +1,10 @@
+# the test layer
+pytest==7.4.4
+pytest-html==4.1.1
+black==24.2.0
+bandit==1.7.9
+pylint==3.2.7
+requests==2.31.0
+# the browser layer: selenium drives Google Chrome 128.0.6613.120 through
+# chromedriver 128.0.6613.137, both pinned by path in test.env (see README)
+selenium==4.52.0
